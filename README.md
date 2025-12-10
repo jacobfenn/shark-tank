@@ -605,7 +605,7 @@ Focus on showing:
 
 ---
 
-## Credits & Support
+## Credits & Support.
 
 **Template created for:**  
 WRIT 20833: Introduction to Coding in the Humanities  
