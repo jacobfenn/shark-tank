@@ -75,22 +75,6 @@ We were motivated to study this because earlier in the class we saw how our expe
                 <img src="images/Code Snippet.jpeg"
                      alt="Code Snippet">
 
-            <div class="code-title">sentiment_analysis.py</div>
-            <pre><code>from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-import pandas as pd
-
-analyzer = SentimentIntensityAnalyzer()
-
-# Analyze sentiment for each text
-df['compound'] = df['text'].apply(
-    lambda x: analyzer.polarity_scores(x)['compound']
-)
-
-# Classify sentiment
-df['sentiment'] = df['compound'].apply(
-    lambda x: 'positive' if x > 0.05
-    else ('negative' if x < -0.05 else 'neutral')
-)</code></pre>
 
             <h3>Topic Modeling Results</h3>
             <p>Using Gensim's LDA implementation, I identified [number] major topics...</p>
